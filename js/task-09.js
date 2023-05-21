@@ -1,5 +1,4 @@
 const refs = {
-  // color: document.querySelector('.widget'),
   span: document.querySelector('.color'),
   button: document.querySelector('.change-color'),
   body: document.querySelector('body'),
@@ -7,9 +6,7 @@ const refs = {
 
 refs.button.addEventListener('click', () => {
   refs.span.textContent = getRandomHexColor();
-  // refs.color.parentNode.style.backgroundColor = getRandomHexColor();
   refs.body.style.backgroundColor = refs.span.textContent;
-  console.log(refs.span.textContent);
   })
 
 function getRandomHexColor() {

@@ -6,16 +6,16 @@ const decrease = document.querySelector('button[data-action="decrement"]');
 
 let counterValue = 0;
 
-increase.addEventListener("click", ButtonIncrease);
+increase.addEventListener("click", onButtonIncrease);
 
-decrease.addEventListener("click", ButtonDecrease);
+decrease.addEventListener("click", onButtonDecrease);
 
-function ButtonIncrease() {
+function onButtonIncrease() {
     counterValue += 1;
     currentValue.textContent = counterValue;
 }
 
-function ButtonDecrease() {
+function onButtonDecrease() {
     counterValue -= 1;
     currentValue.textContent = counterValue;
 }
