@@ -15,7 +15,7 @@ function onSubmit(event) {
 } = event.currentTarget;
 
     if (email.value === "" || password.value === "") {
-    return console.log("Please input email and password.");
+    return console.log("Alert! Please input email and password.");
   }
 
     loginEl.email = email.value;
