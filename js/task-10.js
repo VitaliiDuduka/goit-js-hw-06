@@ -30,6 +30,7 @@ function createBoxes() {
 function destroyBoxes() {
   refs.boxesEl.innerHTML = "";
   refs.boxesArray = [];
+  refs.numbersEl.value = 0;
 }
 
 function getRandomHexColor() {
